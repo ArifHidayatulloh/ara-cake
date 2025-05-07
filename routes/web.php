@@ -19,7 +19,7 @@ Route::get('/user/product/detail', function () {
 });
 
 Route::get('/user/cart', function () {
-    return view('customer.cart.checkout');
+    return view('customer.cart.index');
 });
 
 Route::get('/user/order-confirmation', function () {

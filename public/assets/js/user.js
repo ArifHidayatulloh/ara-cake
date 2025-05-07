@@ -60,3 +60,22 @@ document.querySelectorAll('.variant-option').forEach(option => {
         this.classList.add('active');
     });
 });
+
+   // Toggle favorite button
+   document.querySelectorAll('.btn-favorite').forEach(button => {
+    button.addEventListener('click', function() {
+        this.classList.toggle('active');
+        if (this.classList.contains('active')) {
+            this.innerHTML = '<i class="fas fa-heart"></i>';
+        } else {
+            this.innerHTML = '<i class="far fa-heart"></i>';
+        }
+    });
+});
+
+// Filter functionality would go here
+// This is just a placeholder for actual implementation
+document.querySelector('.btn-primary').addEventListener('click', function() {
+    // In a real implementation, this would filter the products
+    console.log('Applying filters...');
+});
